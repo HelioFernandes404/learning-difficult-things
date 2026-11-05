@@ -1,0 +1,15 @@
+export const chat = {
+  send: "Send",
+  placeholder: "Reply to the tutor... (Enter to send, Shift+Enter for a new line)",
+  thinking: "Thinking...",
+  conceptSaved: (title: string) => `Concept saved: ${title}`,
+  mapUpdated: "Map updated",
+  checkGraded: (verdict: string) => `Check graded: ${verdict}`,
+  configureKeyBefore: "Configure your key in",
+  configureKeyLink: "Settings",
+  configureKeyAfter: "to get started.",
+  errorPrefix: "Error:",
+  imageAlt: (alt: string) => `[image: ${alt}]`,
+  diagramInvalid: "Invalid diagram",
+  diagramRendering: "Rendering...",
+};

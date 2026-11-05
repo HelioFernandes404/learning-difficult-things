@@ -1,0 +1,37 @@
+import type { Messages } from "../en";
+
+export const lesson: Messages["lesson"] = {
+  heading: "O que vamos aprender hoje?",
+  subheading: "Quanto mais contexto, mais certeira a aula.",
+  requestLabel: "O que você quer aprender?",
+  placeholder: "Burn rate em SRE (error budget)...",
+  start: "Iniciar aula",
+  moreContext: "Mais contexto",
+  enterHint: "Enter envia, Shift+Enter nova linha",
+  contextLabel: "Contexto / área",
+  contextPlaceholder: "SRE, observabilidade",
+  goalLabel: "Objetivo",
+  goalPlaceholder: "Por que aprender / o que quer conseguir fazer",
+  levelLabel: "Nível atual",
+  levels: {
+    never_seen: "Nunca vi",
+    heard_of: "Já ouvi falar",
+    use_shallow: "Uso, mas sem profundidade",
+    go_deeper: "Quero aprofundar",
+  },
+  examples: [
+    "Burn rate em SRE (error budget)",
+    "CQRS e event sourcing",
+    "Como funciona o backpropagation",
+    "Cap rate e valuation de imóveis",
+  ],
+  continueTitle: "Continue de onde parou",
+  mastery: { unseen: "não iniciado", learning: "aprendendo", mastered: "dominado", misconception: "equívoco" },
+  teach: "Ensinar",
+  practice: "Praticar",
+  iWantToLearn: "Quero aprender:",
+  contextPrefix: "Contexto:",
+  goalPrefix: "Objetivo:",
+  levelPrefix: "Nível:",
+  practicePrefix: "Praticar:",
+};

@@ -1,0 +1,18 @@
+services:
+  learning-difficult-things:
+    build: .
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      HOST: 0.0.0.0
+      # The port above is only published on 127.0.0.1, so it is safe to run without a password:
+      ALLOW_INSECURE_BIND: "1"
+      # To host it (see "Hosting" in the README): remove ALLOW_INSECURE_BIND, change the port
+      # to "3000:3000" (or use a reverse proxy with HTTPS) and set:
+      # APP_PASSWORD: "a-strong-password"
+      # ALLOWED_HOSTS: "my.domain.com"
+      # SESSION_SECRET: "long-random-text"   # optional
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    restart: unless-stopped

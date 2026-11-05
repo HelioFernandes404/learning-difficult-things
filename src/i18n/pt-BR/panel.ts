@@ -1,0 +1,28 @@
+import type { Messages } from "../en";
+
+export const panel: Messages["panel"] = {
+  tabs: { map: "Mapa", notebook: "Caderno", checks: "Checagens", graph: "Grafo" },
+  verdict: { correct: "correto", partial: "parcial", wrong: "errado", pending: "pendente" },
+  loading: "Carregando...",
+  graphEmpty: "Nenhum nó extraído desta sessão ainda.",
+  graphNodes: (n) => `${n} ${n === 1 ? "nó" : "nós"}. Clique num nó para abrir no grafo.`,
+  mapEmpty: "O tutor ainda não montou o mapa da aula.",
+  thisSession: "Esta sessão",
+  all: "Todas",
+  addNote: "+ Nota",
+  titlePlaceholder: "Título",
+  contentPlaceholder: "Conteúdo (markdown)",
+  save: "Salvar",
+  cancel: "Cancelar",
+  noNotes: "Nenhuma nota ainda.",
+  sourceAi: "IA",
+  sourceUser: "você",
+  edit: "Editar",
+  delete: "Apagar",
+  calibration: "Calibragem",
+  noData: "Sem dados ainda.",
+  highConfidence: (right, total) => `Confiança alta (4-5): ${right}/${total} corretas`,
+  lowConfidence: (right, total) => `Confiança baixa (1-2): ${right}/${total} corretas`,
+  totalGraded: (n) => `Total avaliado: ${n}`,
+  confidenceN: (n) => `confiança ${n}/5`,
+};

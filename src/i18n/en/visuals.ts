@@ -1,0 +1,25 @@
+export const visuals = {
+  labels: {
+    show_chart: "Chart",
+    show_simulator: "Simulator",
+    show_formula: "Formula",
+    show_comparison: "Comparison",
+    show_steps: "Steps",
+  } as Record<string, string>,
+  cannotShow: "Couldn't display this visual.",
+  rawData: "Raw data",
+  noPoints: "No points.",
+  undefinedNumber: "undefined",
+  errorLabel: "Error:",
+  sim: {
+    tooLong: "Expression too long",
+    badSymbols: "Expression contains disallowed symbols",
+    unknownVariable: (id: string) => `Unknown variable: ${id}`,
+    notNumeric: "Result is not a number",
+    invalidId: (id: string) => `Invalid id: ${id}`,
+    duplicateId: (id: string) => `Duplicate id: ${id}`,
+    invalidRange: (id: string) => `Invalid range in ${id}`,
+    unknownXInput: "Unknown chart.xInput",
+    unknownYOutput: "Unknown chart.yOutput",
+  },
+};
